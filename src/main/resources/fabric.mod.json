@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "nosigngui",
+  "version": "${version}",
+  "name": "NoSignGUI",
+  "icon": "icon.png",
+  "description": "A mod to prevent the sign GUI opening",
+  "authors": ["Mason"],
+  "contact": {
+    "repo": "https://github.com/mason/NoSignGUI"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.mason.nosigngui.NoSignGUI"
+    ]
+  },
+  "mixins": [
+    "mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
